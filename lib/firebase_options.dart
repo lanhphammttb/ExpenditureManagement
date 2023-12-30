@@ -44,40 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyD-v3_9fGUUYHHLClNxXL1LgCNDnMH8X6E',
-    appId: '1:479822435618:web:a15d03de00aba01a54817b',
-    messagingSenderId: '479822435618',
-    projectId: 'expenditure-management-b2312',
-    authDomain: 'expenditure-management-b2312.firebaseapp.com',
-    storageBucket: 'expenditure-management-b2312.appspot.com',
-    measurementId: 'G-6137QSCTVL',
+    apiKey: 'AIzaSyBbKjnRRQYGW78O9waWEO5-CHbo6IU7D8k',
+    appId: '1:474983529837:web:84a36893035b482fb1ae64',
+    messagingSenderId: '474983529837',
+    projectId: 'datn-d516a',
+    authDomain: 'datn-d516a.firebaseapp.com',
+    storageBucket: 'datn-d516a.appspot.com',
+    measurementId: 'G-B5VJSZGD41',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBeVil6j7kagQ3l8e42nOQntebJ_AXbi3Q',
-    appId: '1:479822435618:android:f6d00043b009badd54817b',
-    messagingSenderId: '479822435618',
-    projectId: 'expenditure-management-b2312',
-    storageBucket: 'expenditure-management-b2312.appspot.com',
+    apiKey: 'AIzaSyDDSGnfQqfE58r4XScYq8HF-HCBVqIqwK4',
+    appId: '1:474983529837:android:7b58d80cbfee9589b1ae64',
+    messagingSenderId: '474983529837',
+    projectId: 'datn-d516a',
+    storageBucket: 'datn-d516a.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBj5bmzci2c4ce6EgcDjcjToKcx5Wlpc-g',
-    appId: '1:479822435618:ios:12bed3aa659e2ee154817b',
-    messagingSenderId: '479822435618',
-    projectId: 'expenditure-management-b2312',
-    storageBucket: 'expenditure-management-b2312.appspot.com',
-    iosClientId: '479822435618-5rs0eu94d3i6i3ev7dtj4ao5e799qetl.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAUPs_0hPtXW0oqKi3T1mSqk_IgvuYITyQ',
+    appId: '1:474983529837:ios:ec3da3ec6c398c7cb1ae64',
+    messagingSenderId: '474983529837',
+    projectId: 'datn-d516a',
+    storageBucket: 'datn-d516a.appspot.com',
     iosBundleId: 'com.example.expenditureManagement',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBj5bmzci2c4ce6EgcDjcjToKcx5Wlpc-g',
-    appId: '1:479822435618:ios:12bed3aa659e2ee154817b',
-    messagingSenderId: '479822435618',
-    projectId: 'expenditure-management-b2312',
-    storageBucket: 'expenditure-management-b2312.appspot.com',
-    iosClientId: '479822435618-5rs0eu94d3i6i3ev7dtj4ao5e799qetl.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAUPs_0hPtXW0oqKi3T1mSqk_IgvuYITyQ',
+    appId: '1:474983529837:ios:ec3da3ec6c398c7cb1ae64',
+    messagingSenderId: '474983529837',
+    projectId: 'datn-d516a',
+    storageBucket: 'datn-d516a.appspot.com',
     iosBundleId: 'com.example.expenditureManagement',
   );
 }

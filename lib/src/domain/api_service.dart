@@ -13,14 +13,33 @@ class APIService {
 
   static Future<Map<String, dynamic>> getExchangeRate() async {
     try {
-      var url = Uri.https('api.exchangerate.host', '/latest', {'q': '{https}'});
-      final response = await http.get(url);
+      var url = Uri.https('api.apilayer.com', '/exchangerates_data/latest', {
+        'symbols': '', // Thêm các ký hiệu tiền tệ bạn muốn truy vấn vào đây, ví dụ: 'USD,EUR,GBP'
+        'base': '',    // Thêm đơn vị tiền tệ bạn muốn chuyển đổi từ, ví dụ: 'USD'
+      });
+
+      final response = await http.get(url, headers: {
+        'apikey': '3VcgeIMhbdfFQfZgx8m92mnJ1i2ItT93', // Thay bằng khóa API của bạn
+      });
+
       if (response.statusCode == 200) {
+        // Xuất thông điệp debug về nội dung phản hồi
+        print('Phản hồi API: ${response.body}');
+
+        // Phân tích và trả về dữ liệu
         return compute(parseExchangeRate, response.body);
       } else {
-        throw Exception('Failed to load json data');
+        // Xuất thông điệp debug về lỗi
+        print('Không thể tải dữ liệu JSON. Mã trạng thái: ${response.statusCode}');
+
+        throw Exception('Không thể tải dữ liệu JSON');
       }
-    } catch (_) {}
+    } catch (error) {
+      // Xuất thông điệp debug về bất kỳ ngoại lệ nào
+      print('Ngoại lệ trong quá trình gọi API: $error');
+
+      // Xử lý ngoại lệ một cách thích hợp
+    }
     return {};
   }
 
