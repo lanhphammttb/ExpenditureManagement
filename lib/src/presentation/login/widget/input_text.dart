@@ -44,12 +44,15 @@ class InputText extends StatelessWidget {
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.0),
-          borderSide: const BorderSide(width: 0, style: BorderStyle.none),
+          borderSide: BorderSide(
+            width: Theme.of(context).brightness == Brightness.dark ? 0.5 : 0,
+            style: BorderStyle.none,
+          ),
         ),
         hintStyle: AppStyles.p,
         filled: true,
         errorText: error,
-        fillColor: Theme.of(context).colorScheme.background,
+        fillColor: Theme.of(context).colorScheme.background ,
         hintText: hint,
         contentPadding: const EdgeInsets.all(20),
       ),

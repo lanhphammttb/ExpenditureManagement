@@ -45,7 +45,10 @@ class InputPassword extends StatelessWidget {
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.0),
-          borderSide: const BorderSide(width: 0, style: BorderStyle.none),
+          borderSide: BorderSide(
+            width: Theme.of(context).brightness == Brightness.dark ? 0.5 : 0,
+            style: BorderStyle.none,
+          ),
         ),
         hintStyle: AppStyles.p,
         filled: true,

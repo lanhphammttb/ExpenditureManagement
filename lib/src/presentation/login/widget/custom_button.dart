@@ -17,7 +17,7 @@ Widget customButton({required String text, required Function action}) {
       onPressed: () {
         action();
       },
-      child: Text(text, style: AppStyles.p),
+      child: Text(text, style: AppStyles.w),
     ),
   );
 }

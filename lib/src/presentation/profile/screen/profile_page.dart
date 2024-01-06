@@ -224,7 +224,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           },
                           child: Text(
                             AppLocalizations.of(context).translate('logout'),
-                            style: AppStyles.p,
+                            style: AppStyles.w,
                           ),
                         ),
                       ),
